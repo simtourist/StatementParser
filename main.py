@@ -37,11 +37,9 @@ def main():
             logging.error(f"❌ Parsing failed: {result['msgType']}: {result['msg']}")
             return
 
-
         with open(args.output_json, "w", encoding="utf-8") as f:
             json.dump(result, f, ensure_ascii=False, indent=4)
 
-        # Save Excel
         KaspiReportGenerator(result["data"]).write_excel(args.output_excel)
 
         logging.info(f"✅ JSON → {args.output_json}")
