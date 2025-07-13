@@ -1,12 +1,8 @@
----
-
-```
 # 🧾 Kaspi Bank Statement Parser
 
 A Python tool for parsing **Kaspi Bank PDF statements** and converting them into structured **JSON** and **Excel (.xlsx)** files.  
 Supports **Kazakh**, **Russian**, and **English** languages, and works with both raw `.pdf` and base64-encoded `.txt` inputs.
 
----
 
 ## 📦 Features
 
